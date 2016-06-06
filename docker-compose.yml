@@ -1,0 +1,11 @@
+version: '2'
+services:
+  integrity:
+    restart: always
+    image: "integrity"
+    ports:
+      - "4444:4444"
+  platfomr:
+    image: "platform"
+    ports:
+      - "4567:4567"
