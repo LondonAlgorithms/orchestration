@@ -20,4 +20,5 @@ services:
     build:
       context: "./javascript-base/"
       dockerfile: "Dockerfile"
+    image: "platform-base-js:latest"
 

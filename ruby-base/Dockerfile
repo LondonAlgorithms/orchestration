@@ -3,6 +3,7 @@ FROM ruby:latest
 RUN mkdir -p /usr/src/problem
 WORKDIR /usr/src/problem
 
+Add ./.rspec /usr/src/problem/.rspec
 ADD ./Gemfile /usr/src/problem/Gemfile
 ADD ./Gemfile.lock /usr/src/problem/Gemfile.lock
 
