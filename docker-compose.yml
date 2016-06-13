@@ -10,7 +10,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      - INTEGRITY_APP_URL="http://integrity:4444/"
+      - INTEGRITY_APP_URL=http://integrity:4444/
   ruby-base:
     build:
       context: "./ruby-base/"
