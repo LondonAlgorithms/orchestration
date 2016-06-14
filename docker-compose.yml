@@ -1,7 +1,6 @@
 version: '2'
 services:
   integrity:
-    restart: always
     image: "integrity"
   platform:
     image: "platform"
@@ -11,6 +10,10 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - INTEGRITY_APP_URL=http://integrity:4444/
+  repl:
+    image: "repl"
+    ports:
+      - "80:80"
   ruby-base:
     build:
       context: "./ruby-base/"
@@ -21,4 +24,3 @@ services:
       context: "./javascript-base/"
       dockerfile: "Dockerfile"
     image: "platform-base-js:latest"
-
