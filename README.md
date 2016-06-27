@@ -8,7 +8,13 @@ It relies on the images of `repl`, `integrity` and `platform` being built, alrea
 ---
 
 To build the repos (after any changes in the other docker images):
-`docker-compose up`; after everything has been built, cancel the console.
+
+`docker-compose up` 
+
+after everything has been built, cancel the console.
+
+---
 
 To start all services:
+
 `docker-compose start`
